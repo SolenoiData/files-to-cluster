@@ -154,8 +154,10 @@ spec:
         sudo chown $USER /mnt/vol
 
         source /opt/cms/entrypoint.sh
-        git clone git://github.com/cms-opendata-workshop/workshop2021-poetpayload-cloud.git
-        cd workshop2021-poetpayload-cloud/PhysObjectExtractor
+        
+        git clone git://github.com/cms-opendata-analyses/PhysObjectExtractorTool.git
+
+        cd PhysObjectExtractorTool/PhysObjectExtractor
         scram b
 
         processName="{{inputs.parameters.processName}}"
